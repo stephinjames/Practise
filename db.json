@@ -1,0 +1,65 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "angular-reloaded",
+      "author": "stephin"
+    },
+    {
+      "id": "3",
+      "title": "react",
+      "author": "saurabh"
+    },
+    {
+      "id": "4",
+      "title": "java",
+      "author": "vishal"
+    },
+    {
+      "id": "5",
+      "title": "playwright",
+      "author": "stephin"
+    },
+    {
+      "id": "6",
+      "title": "C#",
+      "author": "stephin"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Stephin",
+      "usermobile": 9874561230
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "students": [
+    {
+      "student_name": "Vishal Balu",
+      "student_mobile": "01212455441",
+      "student_email": "stephin.kaniyanjalil@waiin.com",
+      "student_dob": "2023-08-01",
+      "id": 1
+    },
+    {
+      "student_name": "sham",
+      "student_mobile": "77777777777",
+      "student_email": "",
+      "student_dob": "2023-08-06",
+      "student_year": "3rd year",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <h1 class="mb-4">Student Information Form</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Student Name:</label>
+            <input type="text" class="form-control" #name name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="tel" class="form-control" #mobile name="mobile" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" #email name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="form-control" #dob name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label for="academicYear">Academic Year:</label>
+            <select class="form-control" #academicYear name="academicYear" required>
+                <option value="1st year">1st year</option>
+                <option value="2nd year">2nd year</option>
+                <option value="3rd year">3rd year</option>
+            </select>
+        </div>
+
+
+        <button type="submit" (click)="AddStudemt(name,mobile,email,dob,academicYear)" class="btn btn-primary">Submit</button>
+    </form>
+</div>

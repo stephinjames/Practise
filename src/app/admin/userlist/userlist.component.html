@@ -1,0 +1,46 @@
+<p>userlist works!</p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>UserName</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of data">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Iphone</th>
+        <th>description</th>
+        <th>Brand</th>
+        <th>Category</th>
+        <th>ThumbNail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{product?.id}}</td>
+        <td>{{product?.title}}</td>
+        <td>{{product?.description}}</td>
+        <td>{{product?.brand}}</td>
+        <td>{{product?.category}}</td>
+        <td><img [src]="product?.thumbnail"></td>
+      
+      </tr>
+    </tbody>
+  </table> 

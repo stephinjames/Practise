@@ -1,0 +1,70 @@
+<form (ngSubmit)="addUser()" class="mt-3 container">
+<!-- form #userform ="ngForm" (submit)="saveData(userform)" class="mt-3 container"> -->
+  <div class="row">
+    <div class="col">
+      <h4 class="mb-4">Add New Object</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="id">Add Id</label>
+        <input type="text" id="id" name="id" [(ngModel)]="id" class="form-control">
+      </div>
+    </div> 
+
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="title">Add Title</label>
+        <input type="text" id="title" name="title" [(ngModel)]="title" class="form-control">
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="author">Add Author</label>
+        <input type="text" id="author" name="author" [(ngModel)]="author" class="form-control">
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <!-- Empty column for alignment purposes -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary mt-3" type="submit">Add Object</button>
+    </div>
+  </div>
+</form>
+
+<div class="container mt-5">
+  <h4>Object List</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of data">
+        <td>{{ obj.id }}</td>
+        <td>{{ obj.title }}</td>
+        <td>{{ obj.author }}</td>
+        <td>
+          <button (click)="deleteUser(obj.id)" class="btn btn-danger btn-sm">Delete</button>
+          <button (click)="page='update'" class="btn btn-primary btn-sm">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
